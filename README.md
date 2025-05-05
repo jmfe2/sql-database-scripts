@@ -18,14 +18,6 @@ Modelar una base de datos relacional que represente álbumes y canciones, cargan
 ## 📂 Estructura de Tablas
 
 ```sql
-album(id, title)
-track(id, title, len, rating, count, album_id)
-track_raw(title, artist, album, album_id, count, rating, len)
-```
-
-## 📊 Resultado Esperado (JOIN final)
-
-```sql
 CREATE TABLE album (
   id SERIAL,
   title VARCHAR(128) UNIQUE,
@@ -45,6 +37,15 @@ DROP TABLE IF EXISTS track_raw;
 CREATE TABLE track_raw
  (title TEXT, artist TEXT, album TEXT, album_id INTEGER,
   count INTEGER, rating INTEGER, len INTEGER);
+```
+
+## 📊 Resultado Esperado (JOIN final)
+
+```sql
+SELECT track.title, album.title
+    FROM track
+    JOIN album ON track.album_id = album.id
+    ORDER BY track.title LIMIT 3;
 ```
 
 Resultado esperado:
