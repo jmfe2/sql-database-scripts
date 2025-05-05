@@ -1,6 +1,6 @@
 # 🎵 ETL de Tracks y Álbumes – SQL Relacional
 
-Este proyecto es una práctica de modelado y transformación de datos en SQL, utilizando un esquema relacional con claves foráneas. Se enfoca en simular un pequeño proceso ETL (Extract, Transform, Load) para organizar y normalizar información musical extraída de un archivo CSV.
+Este proyecto es una práctica de modelado y transformación de datos en SQL, utilizando un esquema relacional con claves foráneas. Se enfoca en simular un pequeño proceso ETL (Extract, Transform, Load) para organizar y normalizar información musical extraída de un archivo CSV y es parte de las actividades de la especialización PostgreSQL for Everybody Specialization por la Universidad de Michigan. 
 
 ## 📌 Objetivo
 
