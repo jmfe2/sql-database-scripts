@@ -64,6 +64,7 @@ A Boy Named Sue (live)            | The Legend Of Johnny Cash
 A Brief History of Packets        | Computing Conversations
 Aguas De Marco                    | Natural Wonders Music Sampler 1999
 
+<<<<<<< HEAD
 2) Unesco Heritage Sites Many-to-One
 Descripción:
 
@@ -71,6 +72,17 @@ Este assignment aborda la normalización de datos relacionados con los sitios de
 
 Cargar datos desde un archivo CSV a la tabla unesco_raw.
 
+=======
+
+### 2) Unesco Heritage Sites Many-to-One
+
+Descripción:
+
+Este assignment aborda la normalización de datos relacionados con los sitios del Patrimonio Mundial de la UNESCO. El proceso incluye:
+
+Cargar datos desde un archivo CSV a la tabla unesco_raw.
+
+>>>>>>> 012f8e0 (Adding files to the repository)
 Crear tablas de búsqueda (lookup) para category, state, region e iso.
 
 Normalizar los datos en unesco_raw poblando las tablas de búsqueda y añadiendo las columnas de clave externa correspondientes.
@@ -116,7 +128,11 @@ Madriu-Perafita-Claror Valley                       | 2004 | Cultural      | And
 Cultural Sites of Al Ain (Hafit, Hili, Bidaa Bint Saud and Oases Areas) | 2011 | Cultural      | United Arab Emirates| Arab States             | ae
 Cultural Landscape and Archaeological Remains of the Bamiyan Valley | 2003 | Cultural      | Afghanistan         | Asia and the Pacific    | af
 
+<<<<<<< HEAD
 3) Musical Track Database plus Artists
+=======
+### 3) Musical Track Database plus Artists
+>>>>>>> 012f8e0 (Adding files to the repository)
 Descripción:
 
 Este assignment extiende el primer ejercicio para construir una relación muchos-a-muchos entre canciones (track) y artistas (artist) utilizando una tabla de unión (tracktoartist). A diferencia de los ejercicios anteriores, se utilizan sentencias ALTER TABLE para eliminar columnas después de crear las relaciones de clave externa.
@@ -182,3 +198,36 @@ Aguas De Marco                    | Natural Wonders Music Sampler 1999 | Rosa Pa
 
 Próximos Pasos
 Continuaré añadiendo más assignments y ejercicios a este repositorio a medida que profundice en mi estudio de SQL y bases de datos relacionales.
+<<<<<<< HEAD
+=======
+
+### (4 Regular Expressions)
+
+create a regular expression to retrieve a subset data from the purpose column of the taxdata table in the readonly database (access details below). Write a regular expressions to retrieve that meet the following criteria:
+
+SELECT purpose FROM taxdata WHERE purpose ~ '^[A-Z]' ORDER BY purpose DESC LIMIT 3;
+
+Here are the first few lines:
+
+YOUTH WRITING WORKSHOPS ACADEMIC SUPPORT
+YOUTH WRESTLING CLUB SUPPORTED YOUTH WRESTLING
+YOUTH WORK THERAPY PROGRAMS
+
+Here is the schema for the taxdata table:
+
+readonly=# \d+ taxdata
+  Column  |          Type          |
+----------+------------------------+
+ id       | integer                |
+ ein      | integer                |
+ name     | character varying(255) |
+ year     | integer                |
+ revenue  | bigint                 |
+ expenses | bigint                 |
+ purpose  | text                   |
+ ptid     | character varying(255) |
+ ptname   | character varying(255) |
+ city     | character varying(255) |
+ state    | character varying(255) |
+ url      | character varying(255) |
+>>>>>>> 012f8e0 (Adding files to the repository)
